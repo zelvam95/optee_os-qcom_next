@@ -27,8 +27,8 @@ struct pas_md_slot {
 	struct pas_mbn mbn;
 	/*
 	 * True once pas_mbn_parse() has located a table for this slot and,
-	 * on secure-boot devices, the metadata has been signature-
-	 * authenticated. Gates AUTH_AND_RESET.
+	 * on secure-boot devices, every signature-authentication check has
+	 * passed. Gates AUTH_AND_RESET.
 	 */
 	bool hash_table_valid;
 };
